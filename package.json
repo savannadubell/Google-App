@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "React Google Books Search",
     "engines": {
-      "node": "11.3.0"
+      "node": "11.9.0"
     },
     "main": "server.js",
     "scripts": {
