@@ -31,7 +31,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // -----------------------------  API ROUTES  -----------------------------
-const { GOOGLE_API_SERVER_KEY } = process.env;
+const  GOOGLE_API_SERVER_KEY = "AIzaSyCG1rStFFBiAIXVU5vHQnfyGz4pFtQgawk";
 const apiRouter = express.Router();
 require("./routes")(apiRouter, db, axios, GOOGLE_API_SERVER_KEY);
 
