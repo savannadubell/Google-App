@@ -1,0 +1,12 @@
+{
+    "extends": ["airbnb", "plugin:prettier/recommended"],
+    "parser": "babel-eslint",
+    "plugins": ["import", "jsx-a11y", "react"],
+    "rules": {
+      "no-underscore-dangle": ["error", { "allow": ["_id"] }],
+      "linebreak-style": ["error", "unix"],
+      "import/prefer-default-export": "off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+  }
+  

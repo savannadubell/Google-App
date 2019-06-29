@@ -1,0 +1,42 @@
+{
+    "name": "react-google-books",
+    "version": "1.0.0",
+    "description": "React Google Books Search",
+    "engines": {
+      "node": "11.3.0"
+    },
+    "main": "server.js",
+    "scripts": {
+      "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+      "start:prod": "node server.js",
+      "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+      "client": "cd client && npm run start",
+      "install": "cd client && yarn install",
+      "build": "cd client && npm run build",
+      "lint": "eslint",
+      "heroku-postbuild": "npm run build"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "concurrently": "^4.1.0",
+      "eslint": "^5.10.0",
+      "eslint-config-airbnb-base": "^13.1.0",
+      "eslint-config-prettier": "^3.3.0",
+      "eslint-plugin-import": "^2.14.0",
+      "eslint-plugin-prettier": "^3.0.0",
+      "nodemon": "^1.18.8",
+      "prettier": "^1.15.3"
+    },
+    "dependencies": {
+      "axios": "^0.18.0",
+      "compression": "^1.7.3",
+      "cookie-parser": "^1.4.3",
+      "dotenv": "^6.2.0",
+      "express": "^4.16.4",
+      "helmet": "^3.15.0",
+      "if-env": "^1.0.4",
+      "mongoose": "^5.3.16",
+      "morgan": "^1.9.1"
+    }
+  }
